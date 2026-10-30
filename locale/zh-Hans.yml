@@ -1,0 +1,26 @@
+tacraft-sociality-qq-oauth:
+  forum:
+    log_in_with: 使用 QQ 登录
+    errors:
+      not_configured: QQ 登录尚未配置，请联系管理员。
+      cancelled: 已取消 QQ 登录。
+      invalid_state: 登录会话已失效，请重新尝试。
+      expired_token: 注册链接已过期，请重新使用 QQ 登录。
+      token_error: QQ 未返回访问令牌，请重试。
+      openid_error: 无法读取 QQ 账号标识，请重试。
+      profile_error: 无法读取 QQ 个人资料，请重试。
+      provider_error: QQ 拒绝了本次登录请求，请重试。
+      network_error: 无法连接 QQ 服务器，请检查网络后重试。
+      invalid_response: QQ 返回了无法识别的响应，请重试。
+      unknown: 使用 QQ 登录时出现问题，请重试。
+
+  admin:
+    settings:
+      app_id_label: QQ App ID
+      app_id_help: 在 QQ 互联（connect.qq.com）创建的网站应用 App ID。请把回调地址 {url} 登记到 QQ 互联后台的「网站回调域」。
+      app_secret_label: QQ App Key
+      app_secret_help: 与 App ID 配对的 App Key（也称 App Secret），请妥善保管，不要泄露。
+      sync_avatar_label: 同步 QQ 头像
+      sync_avatar_help: 使用 QQ 注册时尝试把 QQ 头像同步到论坛。获取失败会自动跳过，不影响注册。
+      icon_label: 登录按钮图标
+      icon_help: 上传 PNG、JPG、GIF 或 WebP 图片，替换内置的 QQ 图标。图片会被压缩到最长边 256 像素并保存在论坛的 assets 目录；留空则使用内置图标。
